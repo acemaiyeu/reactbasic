@@ -1,6 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import logo from "../../assets/images/img_logo_blue.png";
+import { connect } from "react-redux";
 class Home extends React.Component {
   render() {
     return (
@@ -15,4 +16,8 @@ class Home extends React.Component {
     );
   }
 }
-export default withRouter(Home);
+
+const mapStateToProps = (state) => {
+  return { dataRedux: state.users };
+};
+export default connect(mapStateToProps)(withRouter(Home));
