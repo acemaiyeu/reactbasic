@@ -1,0 +1,22 @@
+.list-user-container {
+  width: 100%;
+  .list-user-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .child {
+      height: 40px;
+      border: 1px solid gray;
+      width: 400px;
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+    }
+    .child > span {
+      margin: auto;
+    }
+  }
+}
